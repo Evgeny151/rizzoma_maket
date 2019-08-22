@@ -8,10 +8,6 @@ node_modules/
 
 .gitignore.html
 
-package-lock.json
-
-package.json
-
 .cache/
 
 .vscode/
