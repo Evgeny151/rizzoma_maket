@@ -4,26 +4,19 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        link(href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet")
         title Document
     </head>
     <body>
-        <header class="header">
-            <div class="logo">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-            </div>
-            <span class="logo-text">TOXIN</span>
-            <ul class="header__menu">
-                <li class="menu__item">О нас</li>
-                <li class="menu__item">Услуги</li>
-                <li class="menu__item">Вакансии</li>
-                <li class="menu__item">Новости</li>
-                <li class="menu__item">Соглашения</li>
-            </ul>
-            <button class="button-come_in">войти</button>
-            <button class="button-registr">зарегистрироваться</button>
-        </header>
+        header(class="header")
+            div(class="logo")
+            ul(class="header__menu") 
+                each val, index in ['O нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения']
+                    li(class="menu__item")= val
+
+            button(class="button-come_in") войти
+            button(class="button-registr") зарегистрироваться
+        header
 
 
         script(src='./main.js')
