@@ -15,9 +15,37 @@ html(lang="en")
                     li(class="menu__item")= val
             button(class="button-come_in") войти
             button(class="button-registr") зарегистрироваться
-        footer
+
+        footer(class="footer")
+
+            div(class="footer__foot-logo") 
+                include img/logo.svg
+                p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"
+
+            div(class="footer__navifation")
+                ul(class="navigation__menu") <span class="title-menu">навигация</span>
+                    each val, index in ['O нас', 'Новости', 'Служба поддержски', 'Услуги']
+                        li(class="menu__item")= val
+
+            div(class="footer__about-us")
+                ul(class="about-us__menu") <span class="title-menu">о нас</span>
+                    each val, index in ['O сервисе', 'Наша команда', 'Вакансии', 'Инвесторы']
+                        li(class="menu__item")= val
             
-        
+            div(class="footer__support")
+                ul(class="support__menu") <span class="title-menu">служба поддержки</span>
+                    each val, index in ['Соглашения', 'Сообщества', 'Связь с нами']
+                        li(class="menu__item")= val
+            
+            div(class="footer__sub") <span class="title-menu">подписка</span>
+                p Получайте специальные предложения и новости сервиса
+                form(class="footer__form")
+                    input(type="text", class="form__input", placeholder="Email")
+                    div(class="send")
+                        include img/send.svg
+
+                
+
 
 
         script(src='./main.js')
