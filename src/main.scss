@@ -14,79 +14,21 @@ h1 {
     position: relative;
     background: $color_header;
 
-    .logo{
+    .logo {
         position: absolute;
-
         margin-left: 140px;
         margin-top: 15px;
-
-        display: inline-block;
-
-        height: 40px;
-        width: 40px;
-
-        border: 2px solid $main_color;
-        border-radius: 50%;
-
-        .circle1{
-            display: inline-block;
-
-            position: relative;
-
-            margin-top: 14px;
-            margin-left: -6px;
-
-            height: 20px;
-            width: 20px;
-        }
-        .circle1::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 20px;
-            width: 20px;
-            border-left: 2px solid white;
-            border-right: 2px solid $main_color;
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
-            border-radius: 50%;
-            transform: rotate(-45deg);
-        }
-
-        .circle2 {
-            display: inline-block;
-
-            position: relative;
-
-            right: 3px;
-            height: 15px;
-            width: 15px;
-        }
-
-        .circle2::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 20px;
-            width: 20px;
-            border-left: 2px solid white;
-            border-right: 2px solid #6FCF97;;
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
-            border-radius: 50%;
-            transform: rotate(-84deg);
-        }
-
     }
-
     .header__menu{
         padding: 0;
         margin: 0;
         margin-left: 265px;
 
         display: inline-block;
+
+        li:nth-child(1){
+            margin-left: 285.3px;
+        }
     }
 
     .menu__item{
@@ -147,3 +89,5 @@ h1 {
         color: $color_header;
     }
 }
+
+//      footer
