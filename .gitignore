@@ -1,0 +1,17 @@
+dist/
+
+docs/
+
+node_modules/
+
+.gitignore.txt
+
+.gitignore.html
+
+package-lock.json
+
+package.json
+
+.cache/
+
+.vscode/
