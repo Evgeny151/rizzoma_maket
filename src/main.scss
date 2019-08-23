@@ -1,46 +1,48 @@
+//      colors
 $color_h1: tomato;
 $color_header: #FFFFFF;
 $main_color: #BC9CFF;
+$menu_item_color: rgba(31, 32, 65, 0.5);
+
+//      fonts
+$monserrat_font: 'Montserrat', sans-serif;
+$font_size_12: 12px;
+$font_size_14: 14px;
+
+html {
+    font-family: $monserrat_font;
+}
 
 body{
     margin: 0;
+    background: $color_header;
 }
 
 //      header
 .header {
-    position: relative;
-    background: $color_header;
+    margin-bottom: 50px;
 
     .logo {
-        position: absolute;
-        margin-left: 140px;
-        margin-top: 15px;
+        margin: 0;
+        display: inline-block;
     }
     .header__menu{
         padding: 0;
         margin: 0;
-        margin-left: 265px;
 
         display: inline-block;
-
-        li:nth-child(1){
-            margin-left: 285.3px;
-        }
     }
 
     .menu__item{
-        padding-top: 26px;
-        padding-bottom: 26px;
-        margin-left: 20px;
+        padding-left: 20px;
 
         list-style: none; 
         display: inline-block;
 
-        color: rgba(31, 32, 65, 0.5);
-        font-family: 'Montserrat', sans-serif;
+        color: $menu_item_color;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
+        font-size: $font_size_14;
         line-height: 17px;
     }
 
@@ -56,10 +58,10 @@ body{
         border: 2px solid #BC9CFF;
         border-radius: 22px;
 
-        font-family: Montserrat;
+        font-family: $monserrat_font;
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
+        font-size: $font_size_12;
         line-height: 15px;
 
         color: #BC9CFF;
@@ -77,10 +79,10 @@ body{
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         border-radius: 22px;
 
-        font-family: Montserrat;
+        font-family: $monserrat_font;
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
+        font-size: $font_size_12;
         line-height: 15px;
 
         color: $color_header;
@@ -106,65 +108,75 @@ body{
         height: 72px;
 
         p {
-            font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
-            font-size: 14px;
+            font-size: $font_size_14;
             line-height: 24px;
         }
     }
 
-    .title-menu {
-        font-family: Montserrat;
+    .footer__title-menu{
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
+        font-size: $font_size_12;
         line-height: 15px;
-        text-transform: uppercase;
         color: #1F2041;
     }
 
-    .menu__item {
+    .title-menu__item{
         list-style: none;
-        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
+        font-size: $font_size_14;
         line-height: 17px;
-        color: rgba(31, 32, 65, 0.5);
+        color: $menu_item_color;
     }
 
     .footer__sub{
-        width: 260px;
 
         p {
-            font-family: Montserrat;
+            padding: 0;
+
             font-style: normal;
             font-weight: normal;
-            font-size: 14px;
+            font-size: $font_size_14;
             line-height: 24px;
-            color: rgba(31, 32, 65, 0.75);
+            color: $menu_item_color;
         }
 
         .footer__form {
+            position: relative;
+
             .form__input {
+                padding-left: 15px;
+
                 width: 216px;
                 height: 44px;
     
-                border: 1px solid rgba(31, 32, 65, 0.25);
+                border: 1px solid rgba(31, 32, 65, 0.25);;
                 box-sizing: border-box;
                 border-radius: 4px;
+
             }
 
             input::placeholder {
-                font-family: Montserrat;
+                font-family: $monserrat_font;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 14px;
+                font-size: $font_size_14;
                 line-height: 24px;
 
-                color: rgba(31, 32, 65, 0.25);
+                color: rgba(31, 32, 65, 0.25);;
             }
+
+            .send {
+                display: inline-block;
+
+                position: absolute;
+                right: 39px;
+                top: 13px;  
+            }
+
         }
     }
 }
