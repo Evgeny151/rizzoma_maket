@@ -8,24 +8,26 @@ html(lang="en")
         title Rizzoma
     body
         header(class="header")
-            div(class="logo")
+            div(class="header__logo")
                 include img/logo.svg
+                
             ul(class="header__menu") 
                 each val, index in ['O нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения']
-                    li(class="menu__item")= val
-            button(class="button-come_in") войти
-            button(class="button-registr") зарегистрироваться
+                    li(class="header__menu-item")= val
+            button(class="header__button-come_in") войти
+            button(class="header__button-registr") зарегистрироваться
 
         footer(class="footer")
-
             div(class="footer__foot-logo") 
                 include img/logo.svg
-                p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"
+                p(class="first_paragraph") Бронирование номеров в лучшем 
+                p отеле 2019 года по версии 
+                p ассоциации "Отельные взгляды"
 
             mixin list(ul, ...items)  
                 ul(class="footer__title-menu")= ul  
                     each item in items
-                        li(class="title-menu__item")= item
+                        li(class="footer__menu-item")= item
             +list('НАВИГАЦИЯ', 'O нас', 'Новости', 'Служба поддержки', 'Услуги')
             +list('О НАС', 'O сервисе', 'Наша команда', 'Вакансии', 'Инвесторы')
             +list('СЛУЖБА ПОДДЕРЖКИ', 'Соглашения', 'Сообщества', 'Связь с нами')
@@ -33,8 +35,8 @@ html(lang="en")
             div(class="footer__sub") <span class="title-menu">подписка</span>
                 p Получайте специальные 
                 p предложения и новости сервиса
-                form(class="footer__form")
-                    input(type="text", class="form__input", placeholder="Email")
+                form(class="form")
+                    input(type="text", class="input", placeholder="Email")
                     div(class="send")
                         include img/send.svg
 

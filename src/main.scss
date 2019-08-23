@@ -1,3 +1,4 @@
+
 //      colors
 $color_h1: tomato;
 $color_header: #FFFFFF;
@@ -20,20 +21,28 @@ body{
 
 //      header
 .header {
+    display: flex;
+
     margin-bottom: 50px;
 
-    .logo {
-        margin: 0;
+    &__logo {
         display: inline-block;
+
+        margin: 0;
+        margin-left: 140px;
+        margin-top: 15px;
     }
-    .header__menu{
+
+    &__menu{
         padding: 0;
         margin: 0;
+        margin-top: 26px;
+        margin-left: 285px;
 
         display: inline-block;
     }
 
-    .menu__item{
+    &__menu-item{
         padding-left: 20px;
 
         list-style: none; 
@@ -46,10 +55,11 @@ body{
         line-height: 17px;
     }
 
-    .button-come_in {
+    &__button-come_in {
         display: inline-block;
-
+        width: 87px;
         margin-left: 20px;
+        margin-top: 18px;
         padding: 7px 18px 8px 17px;
 
         border: 2px solid #BC9CFF;
@@ -64,14 +74,12 @@ body{
         color: #BC9CFF;
     }
 
-    .button-registr {
+    &__button-registr {
         display: inline-block;
 
+        margin-top: 18px;
         margin-left: 20px;
-        padding-top: 9px;
-        padding-bottom: 10px;
-        padding-left: 19px;
-        padding-right: 20px;
+        padding: 9px 20px 10px 19px;
 
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         border-radius: 22px;
@@ -100,19 +108,24 @@ body{
         padding-top: 20px;
     }
 
-    .footer__foot-logo{
-        width: 260px;
-        height: 72px;
+    &__foot-logo{
+
+        .first_paragraph {
+            padding-top: 20px;
+        }
 
         p {
+            margin: 0;
+
             font-style: normal;
             font-weight: normal;
             font-size: $font_size_14;
             line-height: 24px;
+            color: rgba(31, 32, 65, 0.75);  
         }
     }
 
-    .footer__title-menu{
+    &__title-menu{
         font-style: normal;
         font-weight: bold;
         font-size: $font_size_12;
@@ -120,7 +133,7 @@ body{
         color: #1F2041;
     }
 
-    .title-menu__item{
+    &__menu-item{
         list-style: none;
         font-style: normal;
         font-weight: normal;
@@ -129,7 +142,7 @@ body{
         color: $menu_item_color;
     }
 
-    .footer__sub{
+    &__sub{
 
         p {
             padding: 0;
@@ -141,10 +154,10 @@ body{
             color: $menu_item_color;
         }
 
-        .footer__form {
+        .form {
             position: relative;
 
-            .form__input {
+            .input {
                 padding-left: 15px;
 
                 width: 216px;
@@ -173,7 +186,6 @@ body{
                 right: 39px;
                 top: 13px;  
             }
-
         }
     }
 }
