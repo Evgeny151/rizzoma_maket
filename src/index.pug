@@ -5,43 +5,8 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet")
+        link(href="main.scss" rel="stylesheet")
         title Rizzoma
     body
-        header(class="header")
-            div(class="header__logo")
-                include img/logo.svg
-                
-            ul(class="header__menu") 
-                each val, index in ['O нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения']
-                    li(class="header__menu-item")= val
-            button(class="header__button-come_in") войти
-            button(class="header__button-registr") зарегистрироваться
-
-        footer(class="footer")
-            div(class="footer__foot-logo") 
-                include img/logo.svg
-                p(class="first_paragraph") Бронирование номеров в лучшем 
-                p отеле 2019 года по версии 
-                p ассоциации "Отельные взгляды"
-
-            mixin list(ul, ...items)  
-                ul(class="footer__title-menu")= ul  
-                    each item in items
-                        li(class="footer__menu-item")= item
-            +list('НАВИГАЦИЯ', 'O нас', 'Новости', 'Служба поддержки', 'Услуги')
-            +list('О НАС', 'O сервисе', 'Наша команда', 'Вакансии', 'Инвесторы')
-            +list('СЛУЖБА ПОДДЕРЖКИ', 'Соглашения', 'Сообщества', 'Связь с нами')
-            
-            div(class="footer__sub") <span class="title-menu">подписка</span>
-                p Получайте специальные 
-                p предложения и новости сервиса
-                form(class="form")
-                    input(type="text", class="input", placeholder="Email")
-                    div(class="send")
-                        include img/send.svg
-
-                
-
-
-
-        script(src='./main.js')
+        include header/head.pug
+        include footer/foot.pug

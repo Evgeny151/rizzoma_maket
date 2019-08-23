@@ -1,0 +1,22 @@
+footer(class="footer")
+    div(class="footer__foot-logo") 
+        include ../img/logo.svg
+        p(class="first_paragraph") Бронирование номеров в лучшем 
+        p отеле 2019 года по версии 
+        p ассоциации "Отельные взгляды"
+
+    mixin list(ul, ...items)  
+        ul(class="footer__title-menu")= ul  
+            each item in items
+                li(class="footer__menu-item")= item
+    +list('НАВИГАЦИЯ', 'O нас', 'Новости', 'Служба поддержки', 'Услуги')
+    +list('О НАС', 'O сервисе', 'Наша команда', 'Вакансии', 'Инвесторы')
+    +list('СЛУЖБА ПОДДЕРЖКИ', 'Соглашения', 'Сообщества', 'Связь с нами')
+            
+    div(class="footer__sub") <span class="title-menu">подписка</span>
+        p Получайте специальные 
+        p предложения и новости сервиса
+        form(class="form")
+            input(type="text", class="input", placeholder="Email")
+            div(class="send")
+                include ../img/send.svg

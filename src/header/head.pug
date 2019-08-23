@@ -1,0 +1,8 @@
+header(class="header")
+    div(class="header__logo")
+        include ../img/logo.svg
+    ul(class="header__menu") 
+        each val, index in ['O нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения']
+            li(class="header__menu-item")= val
+    button(class="header__button-come_in") войти
+    button(class="header__button-registr") зарегистрироваться
