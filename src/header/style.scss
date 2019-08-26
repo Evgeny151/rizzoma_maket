@@ -1,8 +1,7 @@
-//      header
 .header {
     display: flex;
 
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 
     &__logo {
         display: inline-block;
@@ -34,7 +33,16 @@
         line-height: 17px;
     }
 
-    &__button-come_in {
+    .button {
+        display: inline-block;
+        font-family: $monserrat_font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: $font_size_12;
+        line-height: 15px;
+    }
+
+    .button_main {
         display: inline-block;
         width: 87px;
         margin-left: 20px;
@@ -53,7 +61,7 @@
         color: #BC9CFF;
     }
 
-    &__button-registr {
+    .button_alternative {
         display: inline-block;
 
         margin-top: 18px;

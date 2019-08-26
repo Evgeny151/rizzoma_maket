@@ -1,0 +1,25 @@
+.search 
+    h1 Найдём номера под <br>ваши пожелания
+    .calendar
+        .arr-dep.calendar__arrival
+            h3 прибытие
+            form
+                input(type="text", placeholder="ДД.ММ.ГГГГ")
+                .icon-down
+                    include ../../img/icon-down.svg
+        .arr-dep.calendar__departure
+            h3 выезд
+            form 
+                input(type="text", placeholder="ДД.ММ.ГГГГ")
+                .icon-down
+                    include ../../img/icon-down.svg
+    .guests
+        h3 гости 
+        form
+            input(type="text", placeholder="Сколько гостей")
+            .icon-down
+                include ../../img/icon-down.svg
+    button(class="button") подобрать номер
+        .icon-right
+            include ../../img/icon-right.svg
+

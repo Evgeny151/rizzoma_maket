@@ -1,5 +1,7 @@
-@import 'footer/footer_style';
-@import 'header/header_style';
+@import 'footer/style';
+@import 'header/style';
+@import 'content/style';
+@import 'content/search-block/style';
 
 //      colors
 $color_h1: tomato;
@@ -10,6 +12,7 @@ $menu_item_color: rgba(31, 32, 65, 0.5);
 //      fonts
 $monserrat_font: 'Montserrat', sans-serif;
 $font_size_12: 12px;
+$font_size_14: 14px;
 
 
 html {
@@ -20,4 +23,3 @@ body{
     margin: 0;
     background: $color_header;
 }
-
