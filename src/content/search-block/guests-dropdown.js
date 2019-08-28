@@ -23,9 +23,23 @@ let countGrown = 0;
 let countChild = 0;
 let countBaby = 0;
 
-icon_Down.onclick = function() {
-    guests_counter.classList.remove('guests-dropdown-none');
+//  скрыть дропдаун
+function dropDownClose(){
+    guests_counter.classList.remove('guests-dropdown-block');
+}
+
+function dropDownToggle(){
     guests_counter.classList.toggle('guests-dropdown-block');
+}
+
+function clearCount(){
+    countGrown = 0;
+    countChild = 0;
+    countBaby = 0;
+}
+
+icon_Down.onclick = function() {
+    dropDownToggle();
 }
 
 //  сколько взрослых/детей/младенцев
@@ -69,24 +83,42 @@ document.addEventListener('click', function(e){
         if (countBaby < 0) {
             countBaby = 0;
         }
-        
         baby_button_count.querySelector(".count").innerText = countBaby; 
     } 
 });
+
+// запись в инпут
+function dataRecordInput(sumGuests){
+    if (sumGuests != 0 || countBaby != 0) {
+        document.querySelector(".guests").querySelector('input').value = sumGuests + " гостей, " + countBaby + " младенцев";
+    }
+}
 
 //  применить 
 apply.addEventListener('click', function(e){
     e.preventDefault();
 
-    // младенцев не считаем
+    // считать сумму взрослых и детей
     let sumGuests = countGrown + countChild;
-    document.querySelector(".guests").querySelector('input').value = sumGuests + " гостей";
+    
+    //  записываем в инпут
+    dataRecordInput(sumGuests);
 
-    guests_counter.classList.add('guests-dropdown-none');
+    //  скрываем инпут
+    dropDownClose();
 });
+
+function filling(){
+    grown_button_count.querySelector(".count").innerText = countGrown;
+    child_button_count.querySelector(".count").innerText = countChild;
+    baby_button_count.querySelector(".count").innerText = countBaby;
+}
 
 //  очистить
 clear.addEventListener('click', function(e){
     e.preventDefault();
     document.querySelector(".guests").querySelector('input').value = "";
+
+    clearCount()
+    filling()
 });

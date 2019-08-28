@@ -115,6 +115,13 @@
                 border: 1px solid rgba(31, 32, 65, 0.25);
                 box-sizing: border-box;
                 border-radius: 4px;
+
+                font-family: $monserrat_font;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 18px;
+                color: rgba(31, 32, 65, 0.75);
             }
     
             input::placeholder {
@@ -130,7 +137,11 @@
                 display: inline-block;
                 position: absolute;
                 right: 41px;
-                top: 8px;
+                top: 10px;
+            }
+
+            .icon-down:hover {
+                cursor: pointer;
             }
         }
     }

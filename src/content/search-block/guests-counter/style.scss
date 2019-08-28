@@ -74,6 +74,10 @@
             }
         }
 
+        .clear:hover {
+            cursor: pointer;
+        }
+
         .apply {
             padding-right: 7px;
 
@@ -82,7 +86,9 @@
             }
         }
 
-
+        .apply:hover {
+            cursor: pointer;
+        }
     }
 }
 
