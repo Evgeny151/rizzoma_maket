@@ -1,6 +1,6 @@
 .guests-counter {
-    display: none;
     position: absolute;
+    display: none;
     min-width: 305px;
     z-index: 1;
     top: 0;
@@ -84,4 +84,12 @@
 
 
     }
+}
+
+.guests-dropdown-block {
+    display: block;
+}
+
+.guests-dropdown-none {
+    display: none;
 }
