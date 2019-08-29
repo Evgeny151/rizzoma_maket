@@ -1,6 +1,7 @@
 .search 
     h1 Найдём номера под <br>ваши пожелания
     .calendar
+        include calendar/calendar.pug
         .arr-dep.calendar__arrival
             h3 прибытие
             form
@@ -25,3 +26,6 @@
             include ../../img/icon-right.svg
     script
         include guests-dropdown.js
+        include calendar/ctrl.js
+        include calendar/common.js
+        include calendar/datepicker.js
