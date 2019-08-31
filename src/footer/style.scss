@@ -13,8 +13,10 @@ $font_size_14: 14px;
 .footer {
     display: flex;
     justify-content: space-around;
-    margin-top: 104px;
-    margin-bottom: 100px;
+    padding-top: 104px;
+    padding-bottom: 100px;
+
+    border: 1px solid rgba(31, 32, 65, 0.25);
 
     ul {
         margin: 0;

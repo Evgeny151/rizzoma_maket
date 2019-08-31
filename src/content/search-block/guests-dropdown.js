@@ -91,6 +91,7 @@ document.addEventListener('click', function(e){
 function dataRecordInput(sumGuests){
     if (sumGuests != 0 || countBaby != 0) {
         document.querySelector(".guests").querySelector('input').value = sumGuests + " гостей, " + countBaby + " младенцев";
+        document.querySelector(".info-block__guests").querySelector('input').value = sumGuests + " гостей, " + countBaby + " младенцев";
     }
 }
 

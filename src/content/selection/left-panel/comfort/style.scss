@@ -1,0 +1,54 @@
+.info-block__comfort {
+    margin-bottom: 30px;
+
+    h3 {
+        margin: 0;
+        margin-bottom: 5px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+    }
+
+    form {
+        position: relative;
+
+        .icon-down {
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 14px;
+        }
+    }
+
+    input {
+        padding: 11px 78px 8px 15px;
+        min-height: 44px;
+        min-width: 266px;
+
+        background: #FFFFFF;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+    }
+
+    input::placeholder {
+        font-family: $monserrat_font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+    }
+}

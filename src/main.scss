@@ -2,8 +2,17 @@
 @import 'header/style';
 @import 'content/style';
 @import 'content/search-block/style';
-@import 'content/search-block/guests-counter/style';
-@import 'content/search-block/calendar/style';
+@import 'content/search-block/dropdown-guests/guests-counter/style';
+@import 'content/selection/style';
+@import 'content/selection/left-panel/data/style';
+@import 'content/selection/left-panel/guests/style';
+@import 'content/selection/left-panel/price/style';
+@import 'content/selection/left-panel/checkbox-buttons/style';
+@import 'content/selection/left-panel/availability/style';
+@import 'content/selection/left-panel/comfort/style';
+@import 'content/selection/left-panel/extra-comfort/style';
+@import 'content/selection/list-numbers/style';
+@import 'content/selection/list-numbers/item-number/style';
 
 //      colors
 $color_h1: tomato;

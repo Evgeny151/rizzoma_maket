@@ -1,7 +1,6 @@
 .search 
     h1 Найдём номера под <br>ваши пожелания
     .calendar
-        include calendar/calendar.pug
         .arr-dep.calendar__arrival
             h3 прибытие
             form
@@ -20,12 +19,9 @@
             input(type="text", placeholder="Сколько гостей")
             .icon-down
                 include ../../img/icon-down.svg
-            include guests-counter/guests-counter.pug
+            include dropdown-guests/guests-counter/guests-counter.pug
     button(class="button") подобрать номер
         .icon-right
             include ../../img/icon-right.svg
     script
         include guests-dropdown.js
-        include calendar/ctrl.js
-        include calendar/common.js
-        include calendar/datepicker.js
